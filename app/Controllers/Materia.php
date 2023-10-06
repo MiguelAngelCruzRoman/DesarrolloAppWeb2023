@@ -70,5 +70,33 @@ class Materia extends BaseController
         $materiaModel->update($_POST['idMateria'],$data);
         return redirect('materia/mostrar','refresh');
     }
+
+    public function buscar(){
+        $materiaModel = model('MateriaModel');
+
+        if(isset($_GET['nombre']) && isset($_GET['nombreCorto']) && isset($_GET['clave']) && isset($_GET['noUnidades'])){
+            $nombre = $_GET['nombre'];
+            $nombreCorto = $_GET['nombreCorto'];
+            $clave = $_GET['clave'];
+            $noUnidades = $_GET['noUnidades'];
+            $data['materias']=$materiaModel->like('nombre',$nombre)
+                                ->like('nombreCorto',$nombreCorto)
+                                ->like('clave',$clave)
+                                ->like('noUnidades',$noUnidades)
+                                ->findAll();
+        }
+        else {
+            $nombre ="";
+            $sexo="";
+            $clave="";
+            $noUnidades="";
+            $data['materias']=$materiaModel->findAll();
+        }
+
+        return view('common/head').
+               view('common/menu').
+               view('materia/buscar',$data).
+               view('common/footer');
+    }
 }
 

@@ -14,6 +14,7 @@ class Alumno extends BaseController
     public function mostrar(){
         $alumnoModel = model('AlumnoModel');
         $data['alumnos']=$alumnoModel->findAll();
+
         return view('common/head').
                view('common/menu').
                view('alumno/mostrar',$data).
@@ -63,6 +64,28 @@ class Alumno extends BaseController
         );
         $alumnoModel->update($_POST['id'],$data);
         return redirect('alumno/mostrar','refresh');
+    }
+
+    public function buscar(){
+        $alumnoModel = model('AlumnoModel');
+
+        if(isset($_GET['nombre']) && isset($_GET['sexo'])){
+            $nombre = $_GET['nombre'];
+            $sexo = $_GET['sexo'];
+            $data['alumnos']=$alumnoModel->like('nombre',$nombre)
+                            ->like('sexo',$sexo)
+                            ->findAll();
+        }
+        else {
+            $nombre ="";
+            $sexo="";
+            $data['alumnos']=$alumnoModel->findAll();
+        }
+
+        return view('common/head').
+               view('common/menu').
+               view('alumno/buscar',$data).
+               view('common/footer');
     }
 }
 

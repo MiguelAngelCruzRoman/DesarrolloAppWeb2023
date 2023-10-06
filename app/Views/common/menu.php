@@ -15,6 +15,7 @@
           <ul class="dropdown-menu">
             <li><a class="dropdown-item" href="<?= base_url('index.php/alumno/agregar');?>">Agregar</a></li>
             <li><a class="dropdown-item" href="<?= base_url('index.php/alumno/mostrar') ?>">Mostrar</a></li>
+            <li><a class="dropdown-item" href="<?= base_url('index.php/alumno/buscar') ?>">Buscar</a></li>
           </ul>
         </li>
         <li class="nav-item dropdown">
@@ -24,6 +25,7 @@
           <ul class="dropdown-menu">
             <li><a class="dropdown-item" href="<?= base_url('index.php/materia/agregar');?>">Agregar</a></li>
             <li><a class="dropdown-item" href="<?= base_url('index.php/materia/mostrar') ?>">Mostrar</a></li>
+            <li><a class="dropdown-item" href="<?= base_url('index.php/materia/buscar') ?>">Buscar</a></li>
           </ul>
         </li>
       </ul>
