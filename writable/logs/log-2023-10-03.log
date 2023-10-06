@@ -1,0 +1,30 @@
+CRITICAL - 2023-10-03 16:43:32 --> syntax error, unexpected variable "$routes"
+in APPPATH\Config\Routes.php on line 14.
+ 1 SYSTEMPATH\CodeIgniter.php(787): CodeIgniter\Router\RouteCollection->loadRoutes()
+ 2 SYSTEMPATH\CodeIgniter.php(442): CodeIgniter\CodeIgniter->tryToRouteIt(null)
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\DesarrolloAppWeb2023\\public\\index.php')
+CRITICAL - 2023-10-03 16:43:46 --> Undefined variable $roures
+in APPPATH\Config\Routes.php on line 12.
+ 1 APPPATH\Config\Routes.php(12): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $roures', 'C:\\xampp\\htdocs\\DesarrolloAppWeb2023\\app\\Config\\Routes.php', 12)
+ 2 SYSTEMPATH\Router\RouteCollection.php(339): require('C:\\xampp\\htdocs\\DesarrolloAppWeb2023\\app\\Config\\Routes.php')
+ 3 SYSTEMPATH\CodeIgniter.php(787): CodeIgniter\Router\RouteCollection->loadRoutes()
+ 4 SYSTEMPATH\CodeIgniter.php(442): CodeIgniter\CodeIgniter->tryToRouteIt(null)
+ 5 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\DesarrolloAppWeb2023\\public\\index.php')
+CRITICAL - 2023-10-03 16:44:00 --> Too few arguments to function App\Controllers\Alumno::delete(), 0 passed in C:\xampp\htdocs\DesarrolloAppWeb2023\system\CodeIgniter.php on line 919 and exactly 1 expected
+in APPPATH\Controllers\Alumno.php on line 36.
+ 1 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Alumno->delete()
+ 2 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Alumno))
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\DesarrolloAppWeb2023\\public\\index.php')
+CRITICAL - 2023-10-03 16:44:08 --> Too few arguments to function App\Controllers\Alumno::delete(), 0 passed in C:\xampp\htdocs\DesarrolloAppWeb2023\system\CodeIgniter.php on line 919 and exactly 1 expected
+in APPPATH\Controllers\Alumno.php on line 36.
+ 1 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Alumno->delete()
+ 2 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Alumno))
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\DesarrolloAppWeb2023\\public\\index.php')

@@ -1,0 +1,433 @@
+ERROR - 2023-10-06 02:42:42 --> mysqli_sql_exception: Unknown column 'materia.deleted_at' in 'where clause' in C:\xampp\htdocs\DesarrolloAppWeb2023\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\DesarrolloAppWeb2023\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\DesarrolloAppWeb2023\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\DesarrolloAppWeb2023\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\DesarrolloAppWeb2023\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\DesarrolloAppWeb2023\system\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\DesarrolloAppWeb2023\system\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\DesarrolloAppWeb2023\app\Controllers\Materia.php(16): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\DesarrolloAppWeb2023\system\CodeIgniter.php(919): App\Controllers\Materia->mostrar()
+#8 C:\xampp\htdocs\DesarrolloAppWeb2023\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Materia))
+#9 C:\xampp\htdocs\DesarrolloAppWeb2023\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\DesarrolloAppWeb2023\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\DesarrolloAppWeb2023\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#12 {main}
+CRITICAL - 2023-10-06 02:42:42 --> Unknown column 'materia.deleted_at' in 'where clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `materia`
+WHERE `materia`.`deleted_at` IS NULL', [], false)
+ 2 SYSTEMPATH\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH\Controllers\Materia.php(16): CodeIgniter\BaseModel->findAll()
+ 5 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Materia->mostrar()
+ 6 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Materia))
+ 7 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\DesarrolloAppWeb2023\\public\\index.php')
+CRITICAL - 2023-10-06 03:00:22 --> Undefined property: stdClass::$id
+in APPPATH\Views\materia\mostrar.php on line 20.
+ 1 APPPATH\Views\materia\mostrar.php(20): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$id', 'C:\\xampp\\htdocs\\DesarrolloAppWeb2023\\app\\Views\\materia\\mostrar.php', 20)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\DesarrolloAppWeb2023\\app\\Views\\materia\\mostrar.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('materia/mostrar', [], true)
+ 5 APPPATH\Controllers\Materia.php(20): view('materia/mostrar', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Materia->mostrar()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Materia))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\DesarrolloAppWeb2023\\public\\index.php')
+CRITICAL - 2023-10-06 03:01:20 --> Undefined property: stdClass::$id
+in APPPATH\Views\materia\mostrar.php on line 20.
+ 1 APPPATH\Views\materia\mostrar.php(20): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$id', 'C:\\xampp\\htdocs\\DesarrolloAppWeb2023\\app\\Views\\materia\\mostrar.php', 20)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\DesarrolloAppWeb2023\\app\\Views\\materia\\mostrar.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('materia/mostrar', [], true)
+ 5 APPPATH\Controllers\Materia.php(20): view('materia/mostrar', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Materia->mostrar()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Materia))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\DesarrolloAppWeb2023\\public\\index.php')
+CRITICAL - 2023-10-06 03:01:38 --> syntax error, unexpected token ";"
+in APPPATH\Views\materia\mostrar.php on line 20.
+ 1 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('materia/mostrar', [], true)
+ 3 APPPATH\Controllers\Materia.php(20): view('materia/mostrar', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Materia->mostrar()
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Materia))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\DesarrolloAppWeb2023\\public\\index.php')
+CRITICAL - 2023-10-06 03:01:48 --> Undefined property: stdClass::$id
+in APPPATH\Views\materia\mostrar.php on line 20.
+ 1 APPPATH\Views\materia\mostrar.php(20): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$id', 'C:\\xampp\\htdocs\\DesarrolloAppWeb2023\\app\\Views\\materia\\mostrar.php', 20)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\DesarrolloAppWeb2023\\app\\Views\\materia\\mostrar.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('materia/mostrar', [], true)
+ 5 APPPATH\Controllers\Materia.php(20): view('materia/mostrar', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Materia->mostrar()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Materia))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\DesarrolloAppWeb2023\\public\\index.php')
+CRITICAL - 2023-10-06 03:01:51 --> Undefined property: stdClass::$id
+in APPPATH\Views\materia\mostrar.php on line 20.
+ 1 APPPATH\Views\materia\mostrar.php(20): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$id', 'C:\\xampp\\htdocs\\DesarrolloAppWeb2023\\app\\Views\\materia\\mostrar.php', 20)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\DesarrolloAppWeb2023\\app\\Views\\materia\\mostrar.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('materia/mostrar', [], true)
+ 5 APPPATH\Controllers\Materia.php(20): view('materia/mostrar', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Materia->mostrar()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Materia))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\DesarrolloAppWeb2023\\public\\index.php')
+CRITICAL - 2023-10-06 03:06:44 --> Undefined property: stdClass::$id
+in APPPATH\Views\materia\mostrar.php on line 20.
+ 1 APPPATH\Views\materia\mostrar.php(20): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$id', 'C:\\xampp\\htdocs\\DesarrolloAppWeb2023\\app\\Views\\materia\\mostrar.php', 20)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\DesarrolloAppWeb2023\\app\\Views\\materia\\mostrar.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('materia/mostrar', [], true)
+ 5 APPPATH\Controllers\Materia.php(20): view('materia/mostrar', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Materia->mostrar()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Materia))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\DesarrolloAppWeb2023\\public\\index.php')
+CRITICAL - 2023-10-06 03:07:11 --> Undefined property: stdClass::$id
+in APPPATH\Views\materia\mostrar.php on line 20.
+ 1 APPPATH\Views\materia\mostrar.php(20): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$id', 'C:\\xampp\\htdocs\\DesarrolloAppWeb2023\\app\\Views\\materia\\mostrar.php', 20)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\DesarrolloAppWeb2023\\app\\Views\\materia\\mostrar.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('materia/mostrar', [], true)
+ 5 APPPATH\Controllers\Materia.php(20): view('materia/mostrar', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Materia->mostrar()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Materia))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\DesarrolloAppWeb2023\\public\\index.php')
+CRITICAL - 2023-10-06 03:08:32 --> Class "App\Controllers\DateTime" not found
+in APPPATH\Controllers\Materia.php on line 33.
+ 1 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Materia->insert()
+ 2 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Materia))
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\DesarrolloAppWeb2023\\public\\index.php')
+CRITICAL - 2023-10-06 03:12:30 --> Undefined property: stdClass::$id
+in APPPATH\Views\materia\mostrar.php on line 20.
+ 1 APPPATH\Views\materia\mostrar.php(20): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$id', 'C:\\xampp\\htdocs\\DesarrolloAppWeb2023\\app\\Views\\materia\\mostrar.php', 20)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\DesarrolloAppWeb2023\\app\\Views\\materia\\mostrar.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('materia/mostrar', [], true)
+ 5 APPPATH\Controllers\Materia.php(20): view('materia/mostrar', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Materia->mostrar()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Materia))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\DesarrolloAppWeb2023\\public\\index.php')
+ERROR - 2023-10-06 03:14:10 --> mysqli_sql_exception: Unknown column 'materia.id' in 'where clause' in C:\xampp\htdocs\DesarrolloAppWeb2023\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\DesarrolloAppWeb2023\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\DesarrolloAppWeb2023\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\DesarrolloAppWeb2023\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\DesarrolloAppWeb2023\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\DesarrolloAppWeb2023\system\Model.php(196): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\DesarrolloAppWeb2023\system\BaseModel.php(563): CodeIgniter\Model->doFind(true, '1')
+#6 C:\xampp\htdocs\DesarrolloAppWeb2023\app\Controllers\Materia.php(53): CodeIgniter\BaseModel->find('1')
+#7 C:\xampp\htdocs\DesarrolloAppWeb2023\system\CodeIgniter.php(919): App\Controllers\Materia->editar('1')
+#8 C:\xampp\htdocs\DesarrolloAppWeb2023\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Materia))
+#9 C:\xampp\htdocs\DesarrolloAppWeb2023\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\DesarrolloAppWeb2023\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\DesarrolloAppWeb2023\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#12 {main}
+CRITICAL - 2023-10-06 03:14:11 --> Unknown column 'materia.id' in 'where clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `materia`
+WHERE `materia`.`deleted_at` IS NULL
+AND `materia`.`id` = :materia.id:', [...], false)
+ 2 SYSTEMPATH\Model.php(196): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(563): CodeIgniter\Model->doFind(true, '1')
+ 4 APPPATH\Controllers\Materia.php(53): CodeIgniter\BaseModel->find('1')
+ 5 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Materia->editar('1')
+ 6 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Materia))
+ 7 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\DesarrolloAppWeb2023\\public\\index.php')
+ERROR - 2023-10-06 03:14:43 --> mysqli_sql_exception: Unknown column 'materia.id' in 'where clause' in C:\xampp\htdocs\DesarrolloAppWeb2023\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\DesarrolloAppWeb2023\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\DesarrolloAppWeb2023\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\DesarrolloAppWeb2023\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\DesarrolloAppWeb2023\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\DesarrolloAppWeb2023\system\Model.php(196): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\DesarrolloAppWeb2023\system\BaseModel.php(563): CodeIgniter\Model->doFind(true, '1')
+#6 C:\xampp\htdocs\DesarrolloAppWeb2023\app\Controllers\Materia.php(53): CodeIgniter\BaseModel->find('1')
+#7 C:\xampp\htdocs\DesarrolloAppWeb2023\system\CodeIgniter.php(919): App\Controllers\Materia->editar('1')
+#8 C:\xampp\htdocs\DesarrolloAppWeb2023\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Materia))
+#9 C:\xampp\htdocs\DesarrolloAppWeb2023\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\DesarrolloAppWeb2023\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\DesarrolloAppWeb2023\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#12 {main}
+CRITICAL - 2023-10-06 03:14:43 --> Unknown column 'materia.id' in 'where clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `materia`
+WHERE `materia`.`deleted_at` IS NULL
+AND `materia`.`id` = :materia.id:', [...], false)
+ 2 SYSTEMPATH\Model.php(196): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(563): CodeIgniter\Model->doFind(true, '1')
+ 4 APPPATH\Controllers\Materia.php(53): CodeIgniter\BaseModel->find('1')
+ 5 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Materia->editar('1')
+ 6 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Materia))
+ 7 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\DesarrolloAppWeb2023\\public\\index.php')
+ERROR - 2023-10-06 03:14:56 --> mysqli_sql_exception: Unknown column 'materia.id' in 'where clause' in C:\xampp\htdocs\DesarrolloAppWeb2023\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\DesarrolloAppWeb2023\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\DesarrolloAppWeb2023\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\DesarrolloAppWeb2023\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\DesarrolloAppWeb2023\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\DesarrolloAppWeb2023\system\Model.php(196): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\DesarrolloAppWeb2023\system\BaseModel.php(563): CodeIgniter\Model->doFind(true, '1')
+#6 C:\xampp\htdocs\DesarrolloAppWeb2023\app\Controllers\Materia.php(53): CodeIgniter\BaseModel->find('1')
+#7 C:\xampp\htdocs\DesarrolloAppWeb2023\system\CodeIgniter.php(919): App\Controllers\Materia->editar('1')
+#8 C:\xampp\htdocs\DesarrolloAppWeb2023\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Materia))
+#9 C:\xampp\htdocs\DesarrolloAppWeb2023\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\DesarrolloAppWeb2023\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\DesarrolloAppWeb2023\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#12 {main}
+CRITICAL - 2023-10-06 03:14:56 --> Unknown column 'materia.id' in 'where clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `materia`
+WHERE `materia`.`deleted_at` IS NULL
+AND `materia`.`id` = :materia.id:', [...], false)
+ 2 SYSTEMPATH\Model.php(196): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(563): CodeIgniter\Model->doFind(true, '1')
+ 4 APPPATH\Controllers\Materia.php(53): CodeIgniter\BaseModel->find('1')
+ 5 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Materia->editar('1')
+ 6 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Materia))
+ 7 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\DesarrolloAppWeb2023\\public\\index.php')
+ERROR - 2023-10-06 03:15:04 --> mysqli_sql_exception: Unknown column 'materia.id' in 'where clause' in C:\xampp\htdocs\DesarrolloAppWeb2023\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\DesarrolloAppWeb2023\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\DesarrolloAppWeb2023\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\DesarrolloAppWeb2023\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\DesarrolloAppWeb2023\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\DesarrolloAppWeb2023\system\Model.php(196): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\DesarrolloAppWeb2023\system\BaseModel.php(563): CodeIgniter\Model->doFind(true, '1')
+#6 C:\xampp\htdocs\DesarrolloAppWeb2023\app\Controllers\Materia.php(53): CodeIgniter\BaseModel->find('1')
+#7 C:\xampp\htdocs\DesarrolloAppWeb2023\system\CodeIgniter.php(919): App\Controllers\Materia->editar('1')
+#8 C:\xampp\htdocs\DesarrolloAppWeb2023\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Materia))
+#9 C:\xampp\htdocs\DesarrolloAppWeb2023\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\DesarrolloAppWeb2023\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\DesarrolloAppWeb2023\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#12 {main}
+CRITICAL - 2023-10-06 03:15:04 --> Unknown column 'materia.id' in 'where clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `materia`
+WHERE `materia`.`deleted_at` IS NULL
+AND `materia`.`id` = :materia.id:', [...], false)
+ 2 SYSTEMPATH\Model.php(196): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(563): CodeIgniter\Model->doFind(true, '1')
+ 4 APPPATH\Controllers\Materia.php(53): CodeIgniter\BaseModel->find('1')
+ 5 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Materia->editar('1')
+ 6 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Materia))
+ 7 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\DesarrolloAppWeb2023\\public\\index.php')
+ERROR - 2023-10-06 03:15:33 --> mysqli_sql_exception: Unknown column 'id' in 'where clause' in C:\xampp\htdocs\DesarrolloAppWeb2023\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\DesarrolloAppWeb2023\system\Database\MySQLi\Connection.php(306): mysqli->query('UPDATE `materia...', 0)
+#1 C:\xampp\htdocs\DesarrolloAppWeb2023\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `materia...')
+#2 C:\xampp\htdocs\DesarrolloAppWeb2023\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `materia...')
+#3 C:\xampp\htdocs\DesarrolloAppWeb2023\system\Database\BaseBuilder.php(2475): CodeIgniter\Database\BaseConnection->query('UPDATE `materia...', Array, false)
+#4 C:\xampp\htdocs\DesarrolloAppWeb2023\system\Model.php(442): CodeIgniter\Database\BaseBuilder->update(Array)
+#5 C:\xampp\htdocs\DesarrolloAppWeb2023\system\BaseModel.php(1080): CodeIgniter\Model->doDelete(Array, false)
+#6 C:\xampp\htdocs\DesarrolloAppWeb2023\app\Controllers\Materia.php(47): CodeIgniter\BaseModel->delete(Array)
+#7 C:\xampp\htdocs\DesarrolloAppWeb2023\system\CodeIgniter.php(919): App\Controllers\Materia->delete('1')
+#8 C:\xampp\htdocs\DesarrolloAppWeb2023\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Materia))
+#9 C:\xampp\htdocs\DesarrolloAppWeb2023\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\DesarrolloAppWeb2023\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\DesarrolloAppWeb2023\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#12 {main}
+CRITICAL - 2023-10-06 03:15:33 --> Unknown column 'id' in 'where clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2475): CodeIgniter\Database\BaseConnection->query('UPDATE `materia` SET `deleted_at` = :deleted_at:
+WHERE `id` IN :id:
+AND `deleted_at` IS NULL', [...], false)
+ 2 SYSTEMPATH\Model.php(442): CodeIgniter\Database\BaseBuilder->update([...])
+ 3 SYSTEMPATH\BaseModel.php(1080): CodeIgniter\Model->doDelete([...], false)
+ 4 APPPATH\Controllers\Materia.php(47): CodeIgniter\BaseModel->delete([...])
+ 5 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Materia->delete('1')
+ 6 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Materia))
+ 7 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\DesarrolloAppWeb2023\\public\\index.php')
+ERROR - 2023-10-06 03:15:39 --> mysqli_sql_exception: Unknown column 'materia.id' in 'where clause' in C:\xampp\htdocs\DesarrolloAppWeb2023\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\DesarrolloAppWeb2023\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\DesarrolloAppWeb2023\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\DesarrolloAppWeb2023\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\DesarrolloAppWeb2023\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\DesarrolloAppWeb2023\system\Model.php(196): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\DesarrolloAppWeb2023\system\BaseModel.php(563): CodeIgniter\Model->doFind(true, '1')
+#6 C:\xampp\htdocs\DesarrolloAppWeb2023\app\Controllers\Materia.php(53): CodeIgniter\BaseModel->find('1')
+#7 C:\xampp\htdocs\DesarrolloAppWeb2023\system\CodeIgniter.php(919): App\Controllers\Materia->editar('1')
+#8 C:\xampp\htdocs\DesarrolloAppWeb2023\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Materia))
+#9 C:\xampp\htdocs\DesarrolloAppWeb2023\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\DesarrolloAppWeb2023\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\DesarrolloAppWeb2023\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#12 {main}
+CRITICAL - 2023-10-06 03:15:39 --> Unknown column 'materia.id' in 'where clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `materia`
+WHERE `materia`.`deleted_at` IS NULL
+AND `materia`.`id` = :materia.id:', [...], false)
+ 2 SYSTEMPATH\Model.php(196): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(563): CodeIgniter\Model->doFind(true, '1')
+ 4 APPPATH\Controllers\Materia.php(53): CodeIgniter\BaseModel->find('1')
+ 5 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Materia->editar('1')
+ 6 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Materia))
+ 7 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\DesarrolloAppWeb2023\\public\\index.php')
+ERROR - 2023-10-06 03:19:40 --> mysqli_sql_exception: Unknown column 'materia.id' in 'where clause' in C:\xampp\htdocs\DesarrolloAppWeb2023\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\DesarrolloAppWeb2023\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\DesarrolloAppWeb2023\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\DesarrolloAppWeb2023\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\DesarrolloAppWeb2023\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\DesarrolloAppWeb2023\system\Model.php(196): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\DesarrolloAppWeb2023\system\BaseModel.php(563): CodeIgniter\Model->doFind(true, '3')
+#6 C:\xampp\htdocs\DesarrolloAppWeb2023\app\Controllers\Materia.php(53): CodeIgniter\BaseModel->find('3')
+#7 C:\xampp\htdocs\DesarrolloAppWeb2023\system\CodeIgniter.php(919): App\Controllers\Materia->editar('3')
+#8 C:\xampp\htdocs\DesarrolloAppWeb2023\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Materia))
+#9 C:\xampp\htdocs\DesarrolloAppWeb2023\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\DesarrolloAppWeb2023\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\DesarrolloAppWeb2023\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#12 {main}
+CRITICAL - 2023-10-06 03:19:40 --> Unknown column 'materia.id' in 'where clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `materia`
+WHERE `materia`.`deleted_at` IS NULL
+AND `materia`.`id` = :materia.id:', [...], false)
+ 2 SYSTEMPATH\Model.php(196): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(563): CodeIgniter\Model->doFind(true, '3')
+ 4 APPPATH\Controllers\Materia.php(53): CodeIgniter\BaseModel->find('3')
+ 5 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Materia->editar('3')
+ 6 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Materia))
+ 7 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\DesarrolloAppWeb2023\\public\\index.php')
+CRITICAL - 2023-10-06 03:20:08 --> Undefined variable $idMateria
+in APPPATH\Views\materia\editar.php on line 13.
+ 1 APPPATH\Views\materia\editar.php(13): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $idMateria', 'C:\\xampp\\htdocs\\DesarrolloAppWeb2023\\app\\Views\\materia\\editar.php', 13)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\DesarrolloAppWeb2023\\app\\Views\\materia\\editar.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('materia/editar', [], true)
+ 5 APPPATH\Controllers\Materia.php(57): view('materia/editar', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Materia->editar('3')
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Materia))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\DesarrolloAppWeb2023\\public\\index.php')
+CRITICAL - 2023-10-06 03:22:06 --> Cannot use object of type stdClass as array
+in APPPATH\Views\materia\editar.php on line 13.
+ 1 SYSTEMPATH\View\View.php(226): include()
+ 2 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('materia/editar', [], true)
+ 4 APPPATH\Controllers\Materia.php(57): view('materia/editar', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Materia->editar('3')
+ 6 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Materia))
+ 7 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\DesarrolloAppWeb2023\\public\\index.php')
+CRITICAL - 2023-10-06 03:23:45 --> Undefined variable $alumno
+in APPPATH\Views\materia\editar.php on line 5.
+ 1 APPPATH\Views\materia\editar.php(5): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $alumno', 'C:\\xampp\\htdocs\\DesarrolloAppWeb2023\\app\\Views\\materia\\editar.php', 5)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\DesarrolloAppWeb2023\\app\\Views\\materia\\editar.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('materia/editar', [], true)
+ 5 APPPATH\Controllers\Materia.php(57): view('materia/editar', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Materia->editar('3')
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Materia))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\DesarrolloAppWeb2023\\public\\index.php')
+CRITICAL - 2023-10-06 03:24:46 --> Cannot use object of type stdClass as array
+in APPPATH\Views\materia\editar.php on line 13.
+ 1 SYSTEMPATH\View\View.php(226): include()
+ 2 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('materia/editar', [], true)
+ 4 APPPATH\Controllers\Materia.php(57): view('materia/editar', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Materia->editar('3')
+ 6 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Materia))
+ 7 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\DesarrolloAppWeb2023\\public\\index.php')
+CRITICAL - 2023-10-06 03:27:53 --> Undefined array key "sexo"
+in APPPATH\Controllers\Materia.php on line 65.
+ 1 APPPATH\Controllers\Materia.php(65): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "sexo"', 'C:\\xampp\\htdocs\\DesarrolloAppWeb2023\\app\\Controllers\\Materia.php', 65)
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Materia->update()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Materia))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\DesarrolloAppWeb2023\\public\\index.php')
+CRITICAL - 2023-10-06 03:29:11 --> Undefined array key "idMateria"
+in APPPATH\Controllers\Materia.php on line 72.
+ 1 APPPATH\Controllers\Materia.php(72): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "idMateria"', 'C:\\xampp\\htdocs\\DesarrolloAppWeb2023\\app\\Controllers\\Materia.php', 72)
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Materia->update()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Materia))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\DesarrolloAppWeb2023\\public\\index.php')
+CRITICAL - 2023-10-06 03:32:00 --> Undefined array key "idMateria"
+in APPPATH\Controllers\Materia.php on line 72.
+ 1 APPPATH\Controllers\Materia.php(72): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "idMateria"', 'C:\\xampp\\htdocs\\DesarrolloAppWeb2023\\app\\Controllers\\Materia.php', 72)
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Materia->update()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Materia))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\DesarrolloAppWeb2023\\public\\index.php')
+CRITICAL - 2023-10-06 03:32:57 --> Undefined array key "id"
+in APPPATH\Controllers\Materia.php on line 72.
+ 1 APPPATH\Controllers\Materia.php(72): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id"', 'C:\\xampp\\htdocs\\DesarrolloAppWeb2023\\app\\Controllers\\Materia.php', 72)
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Materia->update()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Materia))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\DesarrolloAppWeb2023\\public\\index.php')
+CRITICAL - 2023-10-06 03:41:46 --> Undefined array key "idMateria"
+in APPPATH\Controllers\Materia.php on line 72.
+ 1 APPPATH\Controllers\Materia.php(72): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "idMateria"', 'C:\\xampp\\htdocs\\DesarrolloAppWeb2023\\app\\Controllers\\Materia.php', 72)
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Materia->update()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Materia))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\DesarrolloAppWeb2023\\public\\index.php')
+CRITICAL - 2023-10-06 03:42:22 --> Undefined array key "idMateria"
+in APPPATH\Controllers\Materia.php on line 72.
+ 1 APPPATH\Controllers\Materia.php(72): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "idMateria"', 'C:\\xampp\\htdocs\\DesarrolloAppWeb2023\\app\\Controllers\\Materia.php', 72)
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Materia->update()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Materia))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\DesarrolloAppWeb2023\\public\\index.php')
+CRITICAL - 2023-10-06 03:45:26 --> Undefined array key "idMateria"
+in APPPATH\Controllers\Materia.php on line 70.
+ 1 APPPATH\Controllers\Materia.php(70): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "idMateria"', 'C:\\xampp\\htdocs\\DesarrolloAppWeb2023\\app\\Controllers\\Materia.php', 70)
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Materia->update()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Materia))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\DesarrolloAppWeb2023\\public\\index.php')

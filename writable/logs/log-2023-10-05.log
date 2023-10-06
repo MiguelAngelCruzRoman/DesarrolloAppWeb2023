@@ -1,0 +1,95 @@
+CRITICAL - 2023-10-05 18:03:51 --> Cannot use object of type stdClass as array
+in APPPATH\Views\alumno\editar.php on line 13.
+ 1 SYSTEMPATH\View\View.php(226): include()
+ 2 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('alumno/editar', [], true)
+ 4 APPPATH\Controllers\Alumno.php(53): view('alumno/editar', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Alumno->editar('34')
+ 6 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Alumno))
+ 7 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\DesarrolloAppWeb2023\\public\\index.php')
+CRITICAL - 2023-10-05 18:04:13 --> Cannot use object of type stdClass as array
+in APPPATH\Views\alumno\editar.php on line 13.
+ 1 SYSTEMPATH\View\View.php(226): include()
+ 2 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('alumno/editar', [], true)
+ 4 APPPATH\Controllers\Alumno.php(53): view('alumno/editar', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Alumno->editar('1')
+ 6 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Alumno))
+ 7 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\DesarrolloAppWeb2023\\public\\index.php')
+CRITICAL - 2023-10-05 18:04:51 --> Cannot use object of type stdClass as array
+in APPPATH\Views\alumno\editar.php on line 3.
+ 1 SYSTEMPATH\View\View.php(226): include()
+ 2 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('alumno/editar', [], true)
+ 4 APPPATH\Controllers\Alumno.php(53): view('alumno/editar', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Alumno->editar('1')
+ 6 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Alumno))
+ 7 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\DesarrolloAppWeb2023\\public\\index.php')
+CRITICAL - 2023-10-05 18:14:26 --> syntax error, unexpected single-quoted string "nombre", expecting identifier or variable or "{" or "$"
+in APPPATH\Views\alumno\editar.php on line 12.
+ 1 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('alumno/editar', [], true)
+ 3 APPPATH\Controllers\Alumno.php(53): view('alumno/editar', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Alumno->editar('1')
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Alumno))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\DesarrolloAppWeb2023\\public\\index.php')
+CRITICAL - 2023-10-05 18:14:59 --> syntax error, unexpected single-quoted string "nombre", expecting identifier or variable or "{" or "$"
+in APPPATH\Views\alumno\editar.php on line 12.
+ 1 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('alumno/editar', [], true)
+ 3 APPPATH\Controllers\Alumno.php(53): view('alumno/editar', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Alumno->editar('1')
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Alumno))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\DesarrolloAppWeb2023\\public\\index.php')
+CRITICAL - 2023-10-05 18:15:30 --> Cannot use object of type stdClass as array
+in APPPATH\Views\alumno\editar.php on line 17.
+ 1 SYSTEMPATH\View\View.php(226): include()
+ 2 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('alumno/editar', [], true)
+ 4 APPPATH\Controllers\Alumno.php(53): view('alumno/editar', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Alumno->editar('1')
+ 6 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Alumno))
+ 7 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\DesarrolloAppWeb2023\\public\\index.php')
+CRITICAL - 2023-10-05 18:15:49 --> syntax error, unexpected token ";"
+in APPPATH\Views\alumno\editar.php on line 17.
+ 1 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('alumno/editar', [], true)
+ 3 APPPATH\Controllers\Alumno.php(53): view('alumno/editar', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Alumno->editar('1')
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Alumno))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\DesarrolloAppWeb2023\\public\\index.php')
+CRITICAL - 2023-10-05 18:16:18 --> Cannot use object of type stdClass as array
+in APPPATH\Views\alumno\editar.php on line 22.
+ 1 SYSTEMPATH\View\View.php(226): include()
+ 2 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('alumno/editar', [], true)
+ 4 APPPATH\Controllers\Alumno.php(53): view('alumno/editar', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Alumno->editar('1')
+ 6 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Alumno))
+ 7 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\DesarrolloAppWeb2023\\public\\index.php')
+CRITICAL - 2023-10-05 18:17:56 --> syntax error, unexpected token "else", expecting end of file
+in APPPATH\Views\alumno\editar.php on line 25.
+ 1 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('alumno/editar', [], true)
+ 3 APPPATH\Controllers\Alumno.php(53): view('alumno/editar', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Alumno->editar('1')
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Alumno))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\DesarrolloAppWeb2023\\public\\index.php')

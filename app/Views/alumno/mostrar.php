@@ -7,6 +7,7 @@
                     <th>Nombre</th>
                     <th>Fecha de Nacimiento</th>
                     <th>Sexo</th>
+                    <th>Acciones</th>
                 </thead>
                 <tbody>
                     <?php foreach ($alumnos as $alumno): ?>
@@ -14,6 +15,10 @@
                             <td><?=$alumno->nombre?></td>
                             <td><?=$alumno->fechaNacimiento?></td>
                             <td><?=$alumno->sexo?></td>
+                            <td>
+                                <a href="<?= base_url('/alumno/delete/'.$alumno->id);?>">Eliminar</a>
+                                <a href="<?= base_url('/alumno/editar/'.$alumno->id);?>">Editar</a>
+                            </td>
                         </tr>
                     <?php endforeach ?>
                 </tbody>

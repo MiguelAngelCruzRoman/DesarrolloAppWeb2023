@@ -14,8 +14,8 @@
                 </div>
 
                 <div class="mb-3">
-                    <lable fro="fechaNacimiento" class="form-label">Fecha de nacimiento</lable>
-                    <input type="date" class="from-control" name="fechaNacimiento" id="fechaNacimiento">
+                    <lable for="fechaNacimiento" class="form-label">Fecha de nacimiento</lable>
+                    <input type="date" class="form-control" name="fechaNacimiento" id="fechaNacimiento">
                 </div>
 
                 <div class="mb-3">
