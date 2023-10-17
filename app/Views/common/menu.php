@@ -28,6 +28,16 @@
             <li><a class="dropdown-item" href="<?= base_url('index.php/materia/buscar') ?>">Buscar</a></li>
           </ul>
         </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Carreras
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="<?= base_url('index.php/carrera/agregar');?>">Agregar</a></li>
+            <li><a class="dropdown-item" href="<?= base_url('index.php/carrera/mostrar') ?>">Mostrar</a></li>
+            <li><a class="dropdown-item" href="<?= base_url('index.php/carrera/buscar') ?>">Buscar</a></li>
+          </ul>
+        </li>
       </ul>
       <form class="d-flex" role="search">
         <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">

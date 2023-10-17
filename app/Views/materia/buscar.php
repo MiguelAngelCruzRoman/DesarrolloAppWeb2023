@@ -6,13 +6,13 @@
 
         <form action="<?= base_url('index.php/materia/buscar/'); ?>" method="GET">
             <label for="nombre">Nombre</label>
-            <input type="text" class="form-control" name="nombre">
+            <input type="text" class="form-control" name="nombre" required pattern="[A-Z]" max_length="50" min_length="3">
             <label for="nombreCorto">Nombre Corto</label>
-            <input type="text" class="form-control" name="nombreCorto">
+            <input type="text" class="form-control" name="nombreCorto" required pattern="[A-Z]" max_length="20" min_length="2">
             <label for="clave">Clave</label>
-            <input type="text" class="form-control" name="clave">
+            <input type="text" class="form-control" name="clave" required pattern="[A-Z a-z 0-9]" max_length="10" min_length="3">
             <label for="noUnidades">No.Unidades</label>
-            <input type="text" class="form-control" name="noUnidades">
+            <input type="text" class="form-control" name="noUnidades" required pattern="[0-9]{1,5}">
         
             <input type="submit" class="btn btn-success mt-4" value="Buscar">
         </form>

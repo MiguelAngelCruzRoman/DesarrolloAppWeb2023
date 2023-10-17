@@ -22,21 +22,45 @@ class Alumno extends BaseController
     }
 
     public function agregar(){
-        return view('common/head').
+        $data['title']="Agregar Alumno";
+        $validation = \Config\Services::validation();
+        
+        if(strtolower($this->request->getMethod())==='get'){
+            return view('common/head',$data).
                view('common/menu').
                view('alumno/agregar').
                view('common/footer');
+        }
+
+        $rules =[
+            'nombre'=>'required|max_length[15]|min_length[3]',
+            'sexo'=>'required',
+            'fechaNacimiento'=>'required'
+        ];
+
+        if(!$this->validate($rules)){
+            return view('common/head',$data).
+            view('common/menu').
+            view('alumno/agregar',['validation'=>$validation]).
+            view('common/footer');       
+        }else{
+            if($this->insert()){
+                return redirect('alumno/mostrar','refresh');
+            }
+        }
+        
     }
 
+    
     public function insert(){
         $alumnoModel = model('AlumnoModel');
-        $data = array(
+        $data = [
             "nombre"=>$_POST['nombre'],
             "sexo"=>$_POST['sexo'],
             "fechaNacimiento"=>$_POST['fechaNacimiento']
-        );
-        $alumnoModel->insert($data);
-        return redirect('alumno/mostrar','refresh');
+        ];
+        $alumnoModel->insert($data,false);
+        return true;        
     }
 
     public function delete($id){
