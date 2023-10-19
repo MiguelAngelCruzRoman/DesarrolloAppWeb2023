@@ -22,13 +22,20 @@ class Alumno extends BaseController
     }
 
     public function agregar(){
+        $gradoModel = model('GradoModel');
+        $data['grados'] = $gradoModel->findAll();
+
+        $grupoModel = model('GrupoModel');
+        $data['grupos'] = $grupoModel->findAll();
+
+
         $data['title']="Agregar Alumno";
         $validation = \Config\Services::validation();
         
         if(strtolower($this->request->getMethod())==='get'){
             return view('common/head',$data).
                view('common/menu').
-               view('alumno/agregar').
+               view('alumno/agregar', $data).
                view('common/footer');
         }
 
@@ -41,7 +48,7 @@ class Alumno extends BaseController
         if(!$this->validate($rules)){
             return view('common/head',$data).
             view('common/menu').
-            view('alumno/agregar',['validation'=>$validation]).
+            view('alumno/agregar',['validation'=>$validation,$data]).
             view('common/footer');       
         }else{
             if($this->insert()){
@@ -57,7 +64,9 @@ class Alumno extends BaseController
         $data = [
             "nombre"=>$_POST['nombre'],
             "sexo"=>$_POST['sexo'],
-            "fechaNacimiento"=>$_POST['fechaNacimiento']
+            "fechaNacimiento"=>$_POST['fechaNacimiento'],
+            "idGrado"=>$_POST['idGrado'],
+            "idGrupo"=>$_POST['idGrupo']
         ];
         $alumnoModel->insert($data,false);
         return true;        
