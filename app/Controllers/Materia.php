@@ -12,6 +12,12 @@ class Materia extends BaseController
     }
 
     public function mostrar(){
+
+        $session = session();
+        if($session->get('logged_in')!=TRUE){
+            return redirect('/','refresh');
+        }
+        
         $materiaModel = model('MateriaModel');
         $data['materias']=$materiaModel->findAll();
         
@@ -22,6 +28,12 @@ class Materia extends BaseController
     }
 
     public function agregar(){
+
+        $session = session();
+        if($session->get('logged_in')!=TRUE){
+            return redirect('/','refresh');
+        }
+
         return view('common/head').
                view('common/menu').
                view('materia/agregar').
@@ -29,6 +41,12 @@ class Materia extends BaseController
     }
 
     public function insert(){
+
+        $session = session();
+        if($session->get('logged_in')!=TRUE){
+            return redirect('/','refresh');
+        }
+
         $materiaModel = model('MateriaModel');
 
         $data = array(
@@ -43,6 +61,12 @@ class Materia extends BaseController
     }
 
     public function delete($idMateria){
+
+        $session = session();
+        if($session->get('logged_in')!=TRUE){
+            return redirect('/','refresh');
+        }
+
         $materiaModel = model('MateriaModel');
         $materiaModel->delete($idMateria);
 
@@ -50,6 +74,12 @@ class Materia extends BaseController
     }
 
     public function editar($idMateria){
+
+        $session = session();
+        if($session->get('logged_in')!=TRUE){
+            return redirect('/','refresh');
+        }
+
         $materiaModel=model('MateriaModel');
         $data['materia']=$materiaModel->find($idMateria);
         
@@ -60,6 +90,12 @@ class Materia extends BaseController
     }
 
     public function update(){
+
+        $session = session();
+        if($session->get('logged_in')!=TRUE){
+            return redirect('/','refresh');
+        }
+
         $materiaModel = model('MateriaModel');
         $data = array(
             "nombre"=>$_POST['nombre'],
@@ -72,6 +108,12 @@ class Materia extends BaseController
     }
 
     public function buscar(){
+
+        $session = session();
+        if($session->get('logged_in')!=TRUE){
+            return redirect('/','refresh');
+        }
+
         $materiaModel = model('MateriaModel');
 
         if(isset($_GET['nombre']) && isset($_GET['nombreCorto']) && isset($_GET['clave']) && isset($_GET['noUnidades'])){

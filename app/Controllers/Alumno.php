@@ -12,6 +12,11 @@ class Alumno extends BaseController
     }
 
     public function mostrar(){
+        
+        $session = session();
+        if($session->get('logged_in')!=TRUE){
+            return redirect('/','refresh');
+        }
         $alumnoModel = model('AlumnoModel');
         $data['alumnos']=$alumnoModel->findAll();
 
@@ -22,6 +27,12 @@ class Alumno extends BaseController
     }
 
     public function agregar(){
+
+        $session = session();
+        if($session->get('logged_in')!=TRUE){
+            return redirect('/','refresh');
+        }
+
         $gradoModel = model('GradoModel');
         $data['grados'] = $gradoModel->findAll();
 
@@ -60,6 +71,12 @@ class Alumno extends BaseController
 
     
     public function insert(){
+
+        $session = session();
+        if($session->get('logged_in')!=TRUE){
+            return redirect('/','refresh');
+        }
+
         $alumnoModel = model('AlumnoModel');
         $data = [
             "nombre"=>$_POST['nombre'],
@@ -73,12 +90,24 @@ class Alumno extends BaseController
     }
 
     public function delete($id){
+
+        $session = session();
+        if($session->get('logged_in')!=TRUE){
+            return redirect('/','refresh');
+        }
+
         $alumnoModel = model('AlumnoModel');
         $alumnoModel->delete($id);
         return redirect('alumno/mostrar','refresh');
     }
 
     public function editar($id){
+
+        $session = session();
+        if($session->get('logged_in')!=TRUE){
+            return redirect('/','refresh');
+        }
+
         $alumnoModel=model('AlumnoModel');
         $data['alumno']=$alumnoModel->find($id);
         
@@ -89,6 +118,12 @@ class Alumno extends BaseController
     }
 
     public function update(){
+
+        $session = session();
+        if($session->get('logged_in')!=TRUE){
+            return redirect('/','refresh');
+        }
+
         $alumnoModel = model('AlumnoModel');
         $data = array(
             "nombre"=>$_POST['nombre'],
@@ -100,6 +135,12 @@ class Alumno extends BaseController
     }
 
     public function buscar(){
+
+        $session = session();
+        if($session->get('logged_in')!=TRUE){
+            return redirect('/','refresh');
+        }
+
         $alumnoModel = model('AlumnoModel');
 
         if(isset($_GET['nombre']) && isset($_GET['sexo'])){

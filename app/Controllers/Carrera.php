@@ -12,6 +12,12 @@ class Carrera extends BaseController
     }
 
     public function mostrar(){
+
+        $session = session();
+        if($session->get('logged_in')!=TRUE){
+            return redirect('/','refresh');
+        }
+        
         $carreraModel = model('CarreraModel');
         $data['carreras']=$carreraModel->findAll();
         
@@ -22,6 +28,12 @@ class Carrera extends BaseController
     }
 
     public function agregar(){
+
+        $session = session();
+        if($session->get('logged_in')!=TRUE){
+            return redirect('/','refresh');
+        }
+
         $data['title']="Agregar Carrera";
         $validation = \Config\Services::validation();
         
@@ -52,6 +64,12 @@ class Carrera extends BaseController
 
     
     public function insert(){
+
+        $session = session();
+        if($session->get('logged_in')!=TRUE){
+            return redirect('/','refresh');
+        }
+
         $carreraModel = model('CarreraModel');
         $data = [
             "nombre"=>$_POST['nombre'],
@@ -62,6 +80,12 @@ class Carrera extends BaseController
     }
     
     public function delete($id){
+
+        $session = session();
+        if($session->get('logged_in')!=TRUE){
+            return redirect('/','refresh');
+        }
+
         $carreraModel = model('CarreraModel');
         $carreraModel->delete($id);
 
@@ -69,6 +93,12 @@ class Carrera extends BaseController
     }
 
     public function editar($id){
+
+        $session = session();
+        if($session->get('logged_in')!=TRUE){
+            return redirect('/','refresh');
+        }
+
         $carreraModel=model('CarreraModel');
         $data['carrera']=$carreraModel->find($id);
         
@@ -79,6 +109,12 @@ class Carrera extends BaseController
     }
 
     public function update(){
+
+        $session = session();
+        if($session->get('logged_in')!=TRUE){
+            return redirect('/','refresh');
+        }
+
         $carreraModel = model('CarreraModel');
     
         $data = array(
@@ -90,6 +126,12 @@ class Carrera extends BaseController
     }
 
     public function buscar(){
+
+        $session = session();
+        if($session->get('logged_in')!=TRUE){
+            return redirect('/','refresh');
+        }
+
         $carreraModel = model('CarreraModel');
 
         if(isset($_GET['nombre']) && isset($_GET['acronimo'])){

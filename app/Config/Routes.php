@@ -36,6 +36,8 @@ $routes->post('/materia/update','Materia::update');
 
 //Rutas de carrera
 $routes->get('/', 'Home::index');
+$routes->post('/', 'Home::index');
+
 $routes->get('/carrera','Carrera::index');
 $routes->get('/carrera/mostrar','Carrera::mostrar');
 $routes->get('/carrera/agregar','Carrera::agregar');

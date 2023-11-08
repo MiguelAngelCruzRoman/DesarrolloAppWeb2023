@@ -38,11 +38,10 @@
             <li><a class="dropdown-item" href="<?= base_url('index.php/carrera/buscar') ?>">Buscar</a></li>
           </ul>
         </li>
+        <li><a class="dropdown-item" href="<?=base_url('index.php/'); session_destroy();?>">Cerrar Sesión</a></li>
       </ul>
-      <form class="d-flex" role="search">
-        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-        <button class="btn btn-outline-success" type="submit">Search</button>
-      </form>
+      
+
     </div>
   </div>
 </nav>
